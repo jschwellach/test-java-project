@@ -7,6 +7,10 @@ import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 
 class TestCodeGuru {
+	
+	private String AWS_KEY_ID = "12345678";
+	private String AWS_SECRET_KEY = "12345678";
+	
 
 	@BeforeEach
 	void setUp() throws Exception {
