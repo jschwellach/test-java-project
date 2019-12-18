@@ -7,6 +7,8 @@ public class Main {
 	}
 	
 	protected void init() {
+		Counter c = new Counter();
+		c.getCount();
 		
 	}
 	

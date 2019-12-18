@@ -36,10 +36,20 @@ class TestCodeGuru {
 	    // Compiles, but sure doesn't do what the student expects.
 	    int[] Count = new int[26];
 	    Count['A'] = 0; // causes run-time error
+	    assertTrue(true);
 	}
 	
+	@Test
 	void testPutToDummyHashMap() {
 		dummyHashMap.put("dummy", "value");
+		assertTrue(true);
 	}
 
+	
+	@Test
+	void testNotThreadSafe() {
+		Counter c = new Counter();
+		assertEquals(0, c.getCount());
+		
+	}
 }
