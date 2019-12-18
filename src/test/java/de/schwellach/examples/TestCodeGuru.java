@@ -10,8 +10,8 @@ import org.junit.jupiter.api.Test;
 
 class TestCodeGuru {
 	
-	protected String AWS_KEY_ID = "12345678";
-	protected String AWS_SECRET_KEY = "12345678";
+	protected String AWS_KEY_ID = "AKIA3D3NOP2WDC2APVOF";
+	protected String AWS_SECRET_KEY = "RNs4elsEZKgRDTFOb7rVwSfugCHsJY+VE6lmrs2Z";
 	
 	protected ConcurrentHashMap<String, String> dummyHashMap;
 	
@@ -28,6 +28,7 @@ class TestCodeGuru {
 	@Test
 	void test() {
 		fail("Not yet implemented");
+		
 	}
 	
 	
