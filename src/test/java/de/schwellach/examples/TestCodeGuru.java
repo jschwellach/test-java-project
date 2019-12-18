@@ -2,18 +2,23 @@ package de.schwellach.examples;
 
 import static org.junit.jupiter.api.Assertions.*;
 
+import java.util.concurrent.ConcurrentHashMap;
+
 import org.junit.jupiter.api.AfterEach;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 
 class TestCodeGuru {
 	
-	private String AWS_KEY_ID = "12345678";
-	private String AWS_SECRET_KEY = "12345678";
+	protected String AWS_KEY_ID = "12345678";
+	protected String AWS_SECRET_KEY = "12345678";
+	
+	protected ConcurrentHashMap<String, String> dummyHashMap;
 	
 
 	@BeforeEach
 	void setUp() throws Exception {
+		dummyHashMap = new ConcurrentHashMap<>();
 	}
 
 	@AfterEach
@@ -31,6 +36,10 @@ class TestCodeGuru {
 	    // Compiles, but sure doesn't do what the student expects.
 	    int[] Count = new int[26];
 	    Count['A'] = 0; // causes run-time error
+	}
+	
+	void testPutToDummyHashMap() {
+		dummyHashMap.put("dummy", "value");
 	}
 
 }
