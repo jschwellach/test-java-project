@@ -11,7 +11,8 @@ public class Counter {
     /*
      * This method is not thread-safe because ++ is not an atomic operation
      */
-    public int getCount(){
+    public int getCount() {
+      // this should be flagged
         return count++;
     }
 }
